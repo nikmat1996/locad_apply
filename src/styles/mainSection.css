@@ -1,0 +1,53 @@
+.mainSection {
+    margin-block-start: 5em;
+}
+
+.mainSection-container {
+    display: flex;
+    padding: 60px 90px;
+    flex-wrap: nowrap;
+}
+
+.mainSection-container > * {
+    width: 50%;
+}
+
+.mainSection-container > article {
+    padding-inline-end: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainSection-container > article > div {
+
+}
+
+.mainSection-iconWrap > *{
+    padding-inline-end: 15px;
+}
+
+.mainSection-h1 {
+    font-size: 70px;
+    line-height: 76px;
+    font-family: Brik;
+    padding-block-start: 1.875rem;
+    letter-spacing: -3px;
+}
+
+.mainSection-p {
+    color: white;
+    font-size: 1.25rem;
+    margin-block-end: 3.5em;
+}
+
+.mainSection-container > div {
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 3.125rem;
+}
+
+.mainSection-container  video {
+    max-height: 700px;
+    max-width: 700px;
+}

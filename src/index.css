@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@font-face {
+  font-family: 'Brik';
+  src: url('./assets/Brik.otf') format('opentype');
+}
+
+:root {
+  font-family: "Space Grotesk", "Space Grotesk";
+  font-weight: 400;
+  line-height: 1.6;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255);
+  background-color: rgb(6, 10, 6);
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%; 
+  
+  --color-white: rgb(255, 255, 255);
+  --color-grey: rgb(207, 220, 220);
+  --color-green: rgb(148, 255, 161);
+  
+  --bg-color-matte: #1A1A1A;
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h2 {
+  font-size: 61px;
+  font-family: Brik;
+  line-height: 59px;
+  color: var(--color-grey);
+}
+
+p{
+  color: rgba(255, 255, 255, 0.87);
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  font-family: "Space Grotesk", "Space Grotesk";
+  font-size: 18px;
+  line-height: 1;
+  border: 1px solid var(--color-green);
+  transition: all 0.3s;
+  border-radius: 6px;
+  font-weight: 500;
+  background: var(--color-green);
+  color: var(--bg-color-matte);
+}
+
+button:hover {
+  background: linear-gradient(90deg, rgb(148, 255, 161) 0px, rgb(207, 220, 220) 72%);
+}

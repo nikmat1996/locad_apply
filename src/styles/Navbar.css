@@ -1,0 +1,45 @@
+.navbar_section {
+    width: 100%;
+    background-color: var(--bg-color-matte);
+    transition: all 0.3s;
+    position: fixed;
+    top: 0;
+}
+
+.navbar_section > nav {
+    display: flex;
+    width: 85%;
+    margin-inline: auto;
+    align-items: center;
+    height: 5em;
+}
+
+.nav_logo {
+    height: 31px;
+}
+
+.nav_links {
+    flex-grow: 1;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 2.5em;
+    font-weight: 500;
+}
+
+.nav_auth {
+    display: flex;
+    gap: 15px;
+}
+
+.nav_login {
+    background: var(--color-black);
+    color: white;
+}
+
+.nav_login:hover {
+    background: var(--color-green);
+    color: var(--bg-color-matte);
+}
+
+

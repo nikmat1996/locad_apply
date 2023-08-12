@@ -1,0 +1,17 @@
+.numbers-section {
+    padding-block: 50px 78px;
+}
+
+.numbers-container {
+    max-width: 1140px;
+    margin-inline: auto;
+    background-color: var(--bg-color-matte);
+    border-radius: 30px;
+    padding: 35px 10px 10px;
+    display: flex;
+}
+
+.numbers-card {
+    padding: 10px;
+    width: calc(100%/3);
+}
