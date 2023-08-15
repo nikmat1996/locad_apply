@@ -19,7 +19,7 @@ function App() {
       <Navbar />
       <MainSection />
       <Numbers />
-      {/* <RollingAd /> */}
+      <RollingAd />
       {/* <DescriptiveSection /> */}
       {/* <TrackingSection /> */}
       {/* <ControlTower /> */}
