@@ -1,5 +1,6 @@
-import "../styles/rollingAd.css";
 import React from "react";
+import { companies as images } from "../assets/data.jsx";
+import "../styles/rollingAd.css";
 import Swiper from "./Swiper";
 
 const property = [
@@ -22,24 +23,12 @@ const RollingAd = () => {
   return (
     <section className="rollingAd-section">
       <div className="rollingAd-container">
-        <Swiper property={property} >
-          <h1>1</h1>
-          <h1>2</h1>
-          <h1>3</h1>
-          <h1>4</h1>
-          <h1>5</h1>
-          <h1>6</h1>
-          <h1>7</h1>
-          <h1>8</h1>
-          <h1>9</h1>
-          <h1>10</h1>
-          <h1>11</h1>
-          <h1>12</h1>
-          <h1>13</h1>
-          <h1>14</h1>
-          <h1>15</h1>
-          <h1>16</h1>
-          <h1>17</h1>
+        <Swiper property={property}>
+          {images.map((image) => (
+            <figure className="rollingAd-figure">
+              <img src={image.imgUrl} alt="company logo" />
+            </figure>
+          ))}
         </Swiper>
       </div>
     </section>

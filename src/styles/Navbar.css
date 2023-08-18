@@ -4,6 +4,7 @@
     transition: all 0.3s;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .navbar_section > nav {

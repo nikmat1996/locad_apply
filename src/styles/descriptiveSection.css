@@ -1,0 +1,64 @@
+.descriptiveSection-section {
+    padding: 80px 50px;
+    background-color: var(--bg-color-matte);
+}
+
+.descriptiveSection-container {
+    display: flex;
+}
+
+.descriptiveSection-cardWrap{
+    width: 25%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.descriptiveSection-cardWrap > img {
+    width: 95%;
+    max-width: 261px;
+    min-height: 315px;
+    padding-block-end: 1.25rem;
+    margin-block-end: 2.5rem;
+}
+
+.descriptiveSection-cardWrap > h2 {
+    line-height: 34px;
+    font-size: 38px;
+    letter-spacing: -2px;
+    display: flex;
+    align-items: center;
+}
+
+.descriptiveSection-cardWrap svg {
+    padding-inline-start: 10px;
+}
+
+.descriptiveSection-cardWrap > p {
+    width: 90%;
+    max-width: 345px;
+    text-align: center;
+    line-height: 2;
+    margin-block-end: 30px;
+}
+
+.descriptiveSection-cardWrap > div {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.descriptiveSection-cardWrap  span {
+    font-size: 14px;
+    line-height: 36px;
+    color: var(--color-grey);
+}
+
+.descriptiveSection-round {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-grey);
+
+}

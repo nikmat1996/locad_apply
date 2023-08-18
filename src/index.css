@@ -39,10 +39,11 @@ body {
 }
 
 h2 {
-  font-size: 61px;
+  font-size: 55px;
   font-family: Brik;
   line-height: 59px;
   color: var(--color-grey);
+  letter-spacing: -3px;
 }
 
 p{

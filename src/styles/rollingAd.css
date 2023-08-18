@@ -1,9 +1,20 @@
 .rollingAd-section {
-  margin-block-start: 2.5em;
+  margin-block: 3em 18px;
 }
 
 .rollingAd-container {
-  margin-block: 18px;
   padding: 10px;
-  
+}
+
+.rollingAd-figure {
+    margin-inline-end: 59px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rollingAd-figure > img {
+    max-width: 100%;
+    max-height: 118px;
 }

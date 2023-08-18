@@ -20,8 +20,8 @@ function App() {
       <MainSection />
       <Numbers />
       <RollingAd />
-      {/* <DescriptiveSection /> */}
-      {/* <TrackingSection /> */}
+      <DescriptiveSection />
+      <TrackingSection />
       {/* <ControlTower /> */}
       {/* <DeliveryMiles /> */}
       {/* <EmailSubscription /> */}
