@@ -1,0 +1,77 @@
+.mapLocad {
+    position: relative;
+}
+
+.mapLocad-backImg {
+    background-image: url(https://golocad.com/wp-content/uploads/2023/07/Map-New-2023.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: calc(58vw + 100px);
+    padding: 50px;
+    display: flex;
+}
+
+.mapLocad-container {
+    min-height: calc(58vw + 100px); 
+    position: absolute;
+    width: min(1240px, 100%);
+    top: 0;
+    left: 50%;
+    translate: -50% 0;
+    padding: 10px 60px;
+    display: flex;
+    align-items: center;
+}
+
+
+.mapLocad-wrap {
+    width: 47.857%;
+    padding: 10px;
+    margin-block: auto;
+}
+
+.mapLocad-wrap > h2 {
+    margin-block-start: 180px;
+    margin-block-end: 40px;
+}
+
+.mapLocad-wrap > p {
+    line-height: 2;
+    margin-block-end: 30px;
+}
+
+@media (max-width: 1024px) {
+    .mapLocad-backImg {
+        background-position: -90% -100%;
+        
+    }
+}
+
+@media (max-width: 767px){
+    .mapLocad-backImg {
+        background-position: bottom right;
+    }
+    
+}
+
+@media (max-width: 880px){
+    .mapLocad-container {
+        position: static;
+        top: 0;
+        left: 0;
+        translate:0;
+        padding: 10px;
+        min-height: max-content;
+        padding-block-end: 50px;
+    }
+    
+    .mapLocad-wrap {
+        width: 100%;
+    }
+    
+    .mapLocad-wrap > h2 {
+        margin-block-start: 0px;
+        font-size: 45px;
+    }
+}

@@ -1,0 +1,52 @@
+.customerStories {
+    padding-block: 50px 20px;
+    background-color :var(--bg-color-matte);
+}
+
+.customerStories > h2{
+    margin-block-end: 55px;
+    width: min(1600px, 100%);
+    margin-inline: auto;
+}
+
+.customerStories-container {
+    width: min(1600px, 100%);
+    margin-inline: auto;
+    display: flex;
+    padding: 10px;
+}
+
+.customerStories-container > *{
+    width: calc(100% / 3);
+}
+
+.customerStories-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.customerStories-card > * {
+    width: min(100%, 407px);
+    font-size: 22px;
+    line-height: 1.2em;
+}
+
+.customerStories-card > img {
+    margin-block-end: 40px;
+}
+
+.customerStories-card > h3 {
+    margin-block: 20px 30px;
+    font-size: 18px;
+    line-height: 0.5em;
+    font-weight: normal;
+    color: var(--color-green);
+}
+
+.customerStories-card:nth-of-type(2) {
+    align-items: center;
+}
+
+.customerStories-card:nth-of-type(3) {
+    align-items: end;
+}

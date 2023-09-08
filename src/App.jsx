@@ -24,10 +24,10 @@ function App() {
       <TrackingSection />
       {/* <ControlTower /> */}
       {/* <DeliveryMiles /> */}
-      {/* <EmailSubscription /> */}
-      {/* <CustomerStories /> */}
-      {/* <MapLocad /> */}
-      {/* <Insights /> */}
+      <EmailSubscription />
+      <CustomerStories />
+      <MapLocad />
+      <Insights />
       {/* <SignUp /> */}
     </>
   )
