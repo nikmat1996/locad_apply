@@ -14,6 +14,10 @@
   --color-grey: rgb(207, 220, 220);
   --color-green: rgb(148, 255, 161);
   --color-black: rgb(6, 10, 6);
+
+  --e-global-color-accent: #94FFA1;
+  --e-global-color-primary: #060A06;
+  --e-global-color-secondary: #CFDCDC;
   
   --bg-color-matte: #1A1A1A;
   
@@ -31,7 +35,7 @@
   
 }
 
-*{
+*, input{
   margin: 0;
   padding: 0;
   box-sizing: border-box;

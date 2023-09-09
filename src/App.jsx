@@ -11,6 +11,7 @@ import Numbers from "./components/Numbers"
 import RollingAd from "./components/RollingAd"
 import SignUp from "./components/SignUp"
 import TrackingSection from "./components/TrackingSection"
+import InfiniteRoll from "./components/InfiniteRoll"
 
 function App() {
 
@@ -22,13 +23,12 @@ function App() {
       <RollingAd />
       <DescriptiveSection />
       <TrackingSection />
-      {/* <ControlTower /> */}
-      {/* <DeliveryMiles /> */}
       <EmailSubscription />
       <CustomerStories />
       <MapLocad />
       <Insights />
-      {/* <SignUp /> */}
+      <SignUp />
+      <InfiniteRoll />
     </>
   )
 }

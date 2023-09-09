@@ -1,0 +1,93 @@
+.signup {
+  padding-block: 50px;
+  background-image: linear-gradient(
+    90deg,
+    var(--e-global-color-accent) 0,
+    var(--e-global-color-secondary) 90%
+  );
+}
+
+.signup--wrap {
+  width: min(100%, 1140px);
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+}
+
+.signup--wrap_left {
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup--wrap_left > h2 {
+  color: var(--color-black);
+}
+
+.signup--wrap_left > p {
+  margin-block-end: 30px;
+  color: var(--color-black);
+}
+
+.signup--wrap_right {
+  padding: 10px;
+  width: 50%;
+}
+
+.signup--wrap_right--form {
+    background-color: var(--color-black);
+    padding: 35px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.signup--wrap_right--form > div:not(.signup_input--wrap) {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.signup_input--wrap {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5px;
+    margin-block-end: 12px;
+    /* box-sizing: border-box; */
+}
+
+.signup--wrap_right--form > .signup_input--wrap {
+    width: 100%;
+}
+
+.signup_input--wrap > label {
+    font-size: 18px;
+    line-height: 2;
+    color: var(--color-grey);
+}
+
+.signup_input--wrap > input {
+    border-radius: 8px;
+    font-size: 18px;
+    display: block;
+    max-width: 100%;
+    padding: 0.75em;
+    border-style: none;
+    background-color: var(--color-white);
+}
+
+
+@media (max-width: 767px){
+    .signup--wrap {
+        flex-direction: column;
+    }
+
+    .signup--wrap > div {
+        width: 100%;
+    }
+}   

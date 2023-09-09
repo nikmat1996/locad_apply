@@ -1,0 +1,24 @@
+.infiniteRoll {
+  padding: 25px 10px;
+}
+
+.infiniteRoll_wrap {
+  display: flex;
+  overflow-x: hidden;
+  flex-wrap: nowrap;
+}
+
+.infiniteRoll_ad {
+  background-image: url("https://golocad.com/wp-content/uploads/2022/09/ticker-tape-silver-1.svg");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 1800px;
+  flex-shrink: 0;
+  animation: roll 30s linear infinite forwards;
+}
+
+@keyframes roll {
+  100% {
+    transform: translateX(-100%);
+  }
+}
