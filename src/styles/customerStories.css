@@ -23,6 +23,9 @@
 .customerStories-card {
   display: flex;
   flex-direction: column;
+  transform: translate(-100%, 0);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
 }
 
 .customerStories-card > * {
@@ -45,10 +48,17 @@
 
 .customerStories-card:nth-of-type(2) {
   align-items: center;
+  transform: translate(0, -100%);
 }
 
 .customerStories-card:nth-of-type(3) {
+  transform: translate(100%, 0);
   align-items: end;
+}
+
+.customerStories-card-visible {
+    opacity: 1 !important;
+    transform: translate(0) !important;
 }
 
 @media screen and (max-width: 970px) {

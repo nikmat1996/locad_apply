@@ -3,6 +3,7 @@ import tracking01 from "../assets/tracking01.webp";
 import tracking02 from "../assets/tracking02.webp";
 import tracking03 from "../assets/tracking03.webp";
 import "../styles/trackingSection.css";
+import { useObserver } from "../utils/oberver";
 
 const TrackingSection = () => {
   return (
@@ -66,14 +67,21 @@ const FeaturesContainer = ({ children }) => (
   <div className="featuresContainer">{children}</div>
 );
 
-const Features_TextWrap = ({ children }) => (
-  <div className="featuresContainer-textWrap">
-    <div>{children}</div>
-  </div>
-);
+const Features_TextWrap = ({ children }) => {
+  const [visible, elemRef] = useObserver()
+  return (
+    <div ref={elemRef} className={`featuresContainer-textWrap ${visible ? "featuresContainer-visible" : ""}`} >
+      <div>{children}</div>
+    </div>
+  )
+};
 
-const Features_ImageWrap = ({ url }) => (
-  <div className="featuresContainer-imageWrap">
-    <img src={url} />
-  </div>
-);
+const Features_ImageWrap = ({ url }) => {
+  const [visible, elemRef] = useObserver()
+  return (
+    <div ref={elemRef} className={`featuresContainer-imageWrap ${visible ? "featuresContainer-visible" : ""}`}>
+     <img src={url} />
+    </div>
+  )
+  
+};

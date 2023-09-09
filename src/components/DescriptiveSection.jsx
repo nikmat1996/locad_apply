@@ -1,11 +1,15 @@
 import "../styles/descriptiveSection.css";
 import React from "react";
 import { descriptive as data } from "../assets/data";
+import { useObserver } from "../utils/oberver";
 
 const DescriptiveSection = () => {
+  
+  const [visible, elemRef] = useObserver()
+
   return (
     <section className="descriptiveSection-section">
-      <div className="descriptiveSection-container">
+      <div className={`descriptiveSection-container ${visible ? "descriptiveSection-container-visible" : ""}`} ref={elemRef}>
         {data.map(item => <DescriptiveCard data={item} />)}
       </div>
     </section>
