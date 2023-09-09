@@ -54,3 +54,39 @@
     /* max-height: 700px;
     max-width: 700px; */
 }
+
+@media (max-width: 962px){
+
+    .mainSection-container {
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .mainSection-container > * {
+        width: 100%;
+        min-height: max-content;
+
+    }
+
+    .mainSection-container > article {
+        padding-inline-end: 0;
+    }
+
+    .mainSection-container > div {
+        
+        padding-inline-start: 0;
+    }
+
+    .mainSection-h1 {
+        font-size: 45px;
+        line-height: 53px;
+        padding-block-start: 15px;
+    }
+    
+    .mainSection-p {
+        font-size: 17px;
+        margin-block: 30px;
+    }
+}  

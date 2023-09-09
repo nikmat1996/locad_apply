@@ -21,13 +21,13 @@
 }
 
 .featuresContainer:nth-of-type(3) .featuresContainer-imageWrap {
-    display: flex;
     justify-content: end;
     padding: 0;
 }
 
 .featuresContainer-imageWrap > img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .featuresContainer-textWrap {
@@ -65,8 +65,27 @@
   background-color: var(--color-grey);
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 1110px) {
   .featuresContainer:not(:nth-of-type(2)) {
     flex-flow: row-reverse;
   }
+
 }
+
+@media screen and (max-width: 1110px) {
+  
+
+  .featuresContainer {
+      flex-direction: column;
+  }
+
+  .featuresContainer > * {
+    width: 100%;
+  }
+
+  .featuresContainer-textWrap h2 {
+    font-size: 50px;
+  }
+
+}
+

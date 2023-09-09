@@ -21,7 +21,7 @@ const data = [
 ]
 
 const Numbers = () => {
-  const [isVisible, numberRef] = useObserver({ threshold : 1});
+  const [isVisible, numberRef] = useObserver({ threshold : 0.5});
 
   return (
     <section className="numbers-section">
